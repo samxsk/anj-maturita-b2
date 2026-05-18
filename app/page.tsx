@@ -37,6 +37,22 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Learn banner */}
+      <Link href="/ucenie"
+        className="flex items-center justify-between rounded-2xl p-5 mb-6 no-underline group"
+        style={{ background: "linear-gradient(135deg,#6c63ff22,#4ecdc422)", border: "1px solid #6c63ff55", textDecoration: "none" }}>
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-xl">🎓</span>
+            <span className="font-bold text-base" style={{ color: "var(--text)" }}>Interaktívne učenie</span>
+          </div>
+          <p className="text-sm" style={{ color: "var(--text2)" }}>
+            60 flashkariet s frázami · 120 kvízových otázok · 8 B2 gramatických štruktúr
+          </p>
+        </div>
+        <span className="text-2xl group-hover:translate-x-1 transition-transform" style={{ color: "var(--accent)" }}>→</span>
+      </Link>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {all.map((a) => (
           <Link key={a.id} href={`/zadanie/${a.id}`}

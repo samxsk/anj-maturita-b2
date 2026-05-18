@@ -22,6 +22,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <span style={{ color: "var(--text2)" }} className="text-sm hidden sm:block">
             Gymnázium Jozefa Miloslava Hurbana · 30 zadaní
           </span>
+          <a href="/ucenie" className="ml-auto text-sm font-semibold px-3 py-1.5 rounded-xl no-underline"
+            style={{ background: "var(--accent)22", color: "var(--accent)", border: "1px solid var(--accent)44", textDecoration: "none" }}>
+            🎓 Učenie
+          </a>
         </header>
         <main className="flex-1">{children}</main>
         <footer style={{ borderTop: "1px solid var(--border)", color: "var(--text2)" }}
