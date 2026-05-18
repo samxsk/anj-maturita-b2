@@ -21,10 +21,10 @@ export default function Home() {
     <div className="max-w-5xl mx-auto px-4 py-10">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold mb-3" style={{ color: "var(--text)" }}>
-          Maturitné zadania z angličtiny
+          ANJ Maturita GJMH
         </h1>
         <p style={{ color: "var(--text2)" }} className="text-lg">
-          Úroveň B2 · 30 zadaní · každé s vypracovanou odpoveďou pre ústnu maturitu
+          Gymnázium Jozefa Miloslava Hurbana · Úroveň B2 · 30 zadaní s vypracovanými odpoveďami
         </p>
         <div className="flex gap-3 justify-center mt-5 flex-wrap text-sm">
           {Object.entries(typeLabel).map(([k, v]) => (

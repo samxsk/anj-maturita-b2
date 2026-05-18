@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ANJ Maturita B2 – Zadania & Odpovede",
-  description: "Všetkých 30 maturitných zadaní z angličtiny B2 s vypracovanými odpoveďami",
+  title: "ANJ Maturita GJMH – Zadania & Odpovede",
+  description: "Všetkých 30 maturitných zadaní z angličtiny B2 s vypracovanými odpoveďami · Gymnázium Jozefa Miloslava Hurbana",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <span style={{ background: "var(--accent)", borderRadius: 8 }}
               className="text-white font-bold text-sm px-2 py-1">B2</span>
             <span className="font-bold text-lg" style={{ color: "var(--text)" }}>
-              ANJ Maturita
+              ANJ Maturita GJMH
             </span>
           </a>
           <span style={{ color: "var(--text2)" }} className="text-sm hidden sm:block">
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <footer style={{ borderTop: "1px solid var(--border)", color: "var(--text2)" }}
           className="text-center text-xs py-4">
-          ANJ Maturita B2 · Úroveň B2 (2025)
+          ANJ Maturita GJMH · Úroveň B2 (2025)
         </footer>
       </body>
     </html>
